@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1799C223397A61003FC1C5 /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1799C123397A61003FC1C5 /* String+HTML.swift */; };
 		8E29BD6A2336B3EA00C3D631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29BD692336B3EA00C3D631 /* AppDelegate.swift */; };
 		8E29BD6E2336B3EA00C3D631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29BD6D2336B3EA00C3D631 /* ViewController.swift */; };
 		8E29BD712336B3EA00C3D631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E29BD6F2336B3EA00C3D631 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E1799C123397A61003FC1C5 /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
 		8E29BD662336B3EA00C3D631 /* Helicopter Panel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Helicopter Panel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E29BD692336B3EA00C3D631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E29BD6D2336B3EA00C3D631 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				8E29BD812336DD3200C3D631 /* PopoverViewController.swift */,
 				8E29BD7D2336C67700C3D631 /* PanelButton.swift */,
 				8EE2CD1723391ED00061FDA2 /* CustomButton.swift */,
+				8E1799C123397A61003FC1C5 /* String+HTML.swift */,
 				8E29BD6F2336B3EA00C3D631 /* Main.storyboard */,
 				8E29BD722336B3EB00C3D631 /* Assets.xcassets */,
 				8E29BD742336B3EB00C3D631 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				8E29BD7E2336C67700C3D631 /* PanelButton.swift in Sources */,
 				8E29BD6E2336B3EA00C3D631 /* ViewController.swift in Sources */,
 				8E29BD822336DD3200C3D631 /* PopoverViewController.swift in Sources */,
+				8E1799C223397A61003FC1C5 /* String+HTML.swift in Sources */,
 				8E29BD6A2336B3EA00C3D631 /* AppDelegate.swift in Sources */,
 				8EE2CD1823391ED00061FDA2 /* CustomButton.swift in Sources */,
 			);

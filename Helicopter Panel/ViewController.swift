@@ -10,36 +10,37 @@ import UIKit
 
 class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
+    // MARK: - Outlets
     @IBOutlet var buttons: [CustomButton]!
     @IBOutlet weak var bgImageView: UIImageView!
     
+    //MARK: - Model - holds all the json info in a custom class
     var panelButtons = [PanelButton]()
 
+    // MARK: - ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+
+        // load the json from the panel file into the panelButtons variable
         loadJSON()
         
+        // loop through all the buttons and set their title and tag (number)
         for index in buttons.indices {
             let button = buttons[index]
-            let title = panelButtons[index]
-            button.setTitle(title.name, for: .normal)
+            button.setTitle(panelButtons[index].name, for: .normal)
             button.tag = panelButtons[index].id
         }
     }
     
+    //MARK: - load the json data
     func loadJSON() {
         if let path = Bundle.main.url(forResource: "panel", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: path, options: .mappedIfSafe)
                 let decoder = JSONDecoder()
-
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
                 do {
                     panelButtons = try decoder.decode([PanelButton].self, from: data)
-//                    for button in panelButtons {
-//                        button.printButton()
-//                    }
                 } catch {
                     print(error.localizedDescription)
                 }
@@ -49,6 +50,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         }
     }
     
+    // MARK: - Target/action methods
     @IBAction func hideBackground(_ sender: UIButton) {
         if sender.titleLabel?.text == "Hide Background" {
             bgImageView.isHidden = true
@@ -60,40 +62,57 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     }
     
     @IBAction func showProcedure(_ sender: UIButton) {
-        
+        // get a handle to the popover view
         guard let popVC = storyboard?.instantiateViewController(withIdentifier: "popVC") as? PopoverViewController else { return }
         
+        // get the tag (number) of the button that was tapped so you can get its procedure text
         let index = sender.tag
         popVC.procedureText = panelButtons[index].procedure
         
+        // set some popover attribures and present the view
         popVC.modalPresentationStyle = .popover
-
         let popOverVC = popVC.popoverPresentationController
         popOverVC?.delegate = self
         popOverVC?.sourceView = sender
 
         self.present(popVC, animated: true)
 
+        // reset the button that was tapped
         let button = sender as! CustomButton
         button.resetButton()
-
+        
+        // reset the other linked buttons
+        for buttonNumber in panelButtons[index].linkedButtons {
+            let button = buttons[buttonNumber]
+            button.resetButton()
+        }
     }
     
     @IBAction func randomAlert(_ sender: Any) {
+        // reset all buttons back to black/white original state
         for index in buttons.indices {
             let button = buttons[index]
             button.resetButton()
         }
 
-        let randomButton = Int.random(in: 0..<panelButtons.count)
-        let randomCondition = Bool.random()
+        // get a random number/button
+        let index = Int.random(in: 0..<panelButtons.count)
         
-        if randomCondition {
-            buttons[randomButton].turnButtonRed()
+        // get the panelButton for the random number and set its colour according to its warning colour value
+        if panelButtons[index].warningColour == "red" {
+            buttons[index].turnButtonRed()
         } else {
-            buttons[randomButton].turnButtonYellow()
+            buttons[index].turnButtonYellow()
         }
-        
+
+        // cycle through the linked buttons array for the selected (random) button and set their warning colour as well
+        for buttonNumber in panelButtons[index].linkedButtons {
+            if panelButtons[buttonNumber].warningColour == "red" {
+                buttons[buttonNumber].turnButtonRed()
+            } else {
+                buttons[buttonNumber].turnButtonYellow()
+            }
+        }
     }
 }
 

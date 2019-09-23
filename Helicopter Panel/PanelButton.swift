@@ -11,10 +11,14 @@ import Foundation
 struct PanelButton: Codable {
     let id: Int
     let name: String
+    let warningColour: String
+    let linkedButtons: [Int]
     let procedure: String
     
     func printButton() {
         print("\(self.id): \(self.name)")
+        print("\(self.warningColour)")
+        print("\(self.linkedButtons)")
         print("\(self.procedure)")
     }
 }
