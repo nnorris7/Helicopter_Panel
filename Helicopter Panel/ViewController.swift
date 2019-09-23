@@ -60,6 +60,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     }
     
     @IBAction func showProcedure(_ sender: UIButton) {
+        
         guard let popVC = storyboard?.instantiateViewController(withIdentifier: "popVC") as? PopoverViewController else { return }
         
         let index = sender.tag
@@ -73,6 +74,26 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
 
         self.present(popVC, animated: true)
 
+        let button = sender as! CustomButton
+        button.resetButton()
+
+    }
+    
+    @IBAction func randomAlert(_ sender: Any) {
+        for index in buttons.indices {
+            let button = buttons[index]
+            button.resetButton()
+        }
+
+        let randomButton = Int.random(in: 0..<panelButtons.count)
+        let randomCondition = Bool.random()
+        
+        if randomCondition {
+            buttons[randomButton].turnButtonRed()
+        } else {
+            buttons[randomButton].turnButtonYellow()
+        }
+        
     }
 }
 

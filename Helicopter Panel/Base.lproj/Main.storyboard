@@ -707,9 +707,19 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3Z-Tz-fw2">
+                                        <rect key="frame" x="456" y="20" width="94" height="30"/>
+                                        <state key="normal" title="Random Alert"/>
+                                        <connections>
+                                            <action selector="randomAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iou-nT-RGK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="F3Z-Tz-fw2" firstAttribute="trailing" secondItem="r2Q-B2-wuB" secondAttribute="trailing" id="2z9-Pf-aFH"/>
                                     <constraint firstItem="d4c-MO-nsV" firstAttribute="top" secondItem="Brg-lS-e8W" secondAttribute="top" id="A4p-EH-R2J"/>
+                                    <constraint firstItem="F3Z-Tz-fw2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="G4Y-Ch-Pn9" secondAttribute="trailing" constant="8" symbolic="YES" id="AmO-QZ-AoS"/>
+                                    <constraint firstItem="F3Z-Tz-fw2" firstAttribute="baseline" secondItem="G4Y-Ch-Pn9" secondAttribute="baseline" id="Fja-Qj-GF2"/>
                                     <constraint firstItem="XCi-B9-SPL" firstAttribute="top" secondItem="r2Q-B2-wuB" secondAttribute="bottom" constant="11" id="GhP-p8-xHX"/>
                                     <constraint firstAttribute="height" constant="995" id="XgY-q3-Khp"/>
                                     <constraint firstItem="r2Q-B2-wuB" firstAttribute="leading" secondItem="Brg-lS-e8W" secondAttribute="leading" constant="75" id="Zly-Vv-xby"/>

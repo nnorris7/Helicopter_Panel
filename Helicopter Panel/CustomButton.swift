@@ -29,4 +29,19 @@ class CustomButton : UIButton {
         layer.borderWidth = 2
         layer.borderColor = UIColor.black.cgColor
     }
+    
+    func resetButton() {
+        setTitleColor(.black, for: .normal)
+        backgroundColor = .white
+    }
+    
+    func turnButtonYellow() {
+        backgroundColor = .yellow
+    }
+    
+    func turnButtonRed() {
+        setTitleColor(.white, for: .normal)
+        backgroundColor = .red
+    }
+
 }
