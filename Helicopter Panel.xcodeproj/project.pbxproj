@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8E29BD6A2336B3EA00C3D631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29BD692336B3EA00C3D631 /* AppDelegate.swift */; };
-		8E29BD6C2336B3EA00C3D631 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29BD6B2336B3EA00C3D631 /* SceneDelegate.swift */; };
 		8E29BD6E2336B3EA00C3D631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29BD6D2336B3EA00C3D631 /* ViewController.swift */; };
 		8E29BD712336B3EA00C3D631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E29BD6F2336B3EA00C3D631 /* Main.storyboard */; };
 		8E29BD732336B3EB00C3D631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E29BD722336B3EB00C3D631 /* Assets.xcassets */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		8E29BD662336B3EA00C3D631 /* Helicopter Panel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Helicopter Panel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E29BD692336B3EA00C3D631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E29BD6B2336B3EA00C3D631 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8E29BD6D2336B3EA00C3D631 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E29BD702336B3EA00C3D631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E29BD722336B3EB00C3D631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				8E29BD692336B3EA00C3D631 /* AppDelegate.swift */,
-				8E29BD6B2336B3EA00C3D631 /* SceneDelegate.swift */,
 				8E29BD6D2336B3EA00C3D631 /* ViewController.swift */,
 				8E29BD812336DD3200C3D631 /* PopoverViewController.swift */,
 				8E29BD7D2336C67700C3D631 /* PanelButton.swift */,
@@ -152,7 +149,6 @@
 				8E29BD6E2336B3EA00C3D631 /* ViewController.swift in Sources */,
 				8E29BD822336DD3200C3D631 /* PopoverViewController.swift in Sources */,
 				8E29BD6A2336B3EA00C3D631 /* AppDelegate.swift in Sources */,
-				8E29BD6C2336B3EA00C3D631 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
