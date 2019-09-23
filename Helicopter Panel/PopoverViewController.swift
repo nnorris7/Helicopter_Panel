@@ -21,6 +21,12 @@ class PopoverViewController: UIViewController {
         textView.text = procedureText
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if let fittedSize = textView?.sizeThatFits(UIView.layoutFittingCompressedSize) {
+            preferredContentSize = CGSize(width: fittedSize.width + 30, height: fittedSize.height + 30)
+        }
+    }
 
     /*
     // MARK: - Navigation

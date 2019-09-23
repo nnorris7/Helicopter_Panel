@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,86 +19,734 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UH60 CWP" translatesAutoresizingMaskIntoConstraints="NO" id="d4c-MO-nsV">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brg-lS-e8W">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="69" y="20" width="630" height="995"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hk6-W2-MH5">
-                                        <rect key="frame" x="138" y="72" width="484" height="30"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UH60 CWP" translatesAutoresizingMaskIntoConstraints="NO" id="d4c-MO-nsV">
+                                        <rect key="frame" x="0.0" y="0.0" width="630" height="995"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="r2Q-B2-wuB">
+                                        <rect key="frame" x="75" y="70" width="475" height="768"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iab-pb-dX4">
-                                                <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2yy-d7-YEZ"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejF-S8-STx">
-                                                <rect key="frame" x="123" y="0.0" width="115" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uxs-CG-B0M"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-XZ-80L">
-                                                <rect key="frame" x="246" y="0.0" width="115" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANd-kV-Zpf"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tih-2J-cfE">
-                                                <rect key="frame" x="369" y="0.0" width="115" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSr-x5-hGp"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hk6-W2-MH5">
+                                                <rect key="frame" x="0.0" y="0.0" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iab-pb-dX4" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2yy-d7-YEZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tih-2J-cfE" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSr-x5-hGp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-XZ-80L" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANd-kV-Zpf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejF-S8-STx" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uxs-CG-B0M"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gZA-tm-fOp">
+                                                <rect key="frame" x="0.0" y="41" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14j-Wd-jTI" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jv0-tk-rve"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj8-Ep-MqP" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ntJ-g8-hec"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoq-UL-tzq" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ifv-dl-TIY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ii1-nE-4sl" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZC1-ch-Dye"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="txw-kP-SH9">
+                                                <rect key="frame" x="0.0" y="82" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aB-bL-UIW" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HB9-Ty-zlw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFy-hN-8wZ" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPF-60-fZw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tj-oK-HZb" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ie6-C2-iAq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwE-DK-tXo" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kcj-Z6-Elk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6t8-z0-7cB">
+                                                <rect key="frame" x="0.0" y="123" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O03-sn-ZOw" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kd7-XZ-CQd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sne-ZZ-0qe" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m5E-E4-714"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooG-T2-Mck" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="utZ-ot-HYB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZi-4W-can" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdi-N5-sM7"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ADH-Il-hJQ">
+                                                <rect key="frame" x="0.0" y="164" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUO-tG-m0A" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ia-EB-Tix"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bb-yq-iPO" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6R-ze-B3i"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOr-eR-Me5" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMC-c9-BSq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHp-Vd-0zY" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69X-Aa-hC1"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EHi-KU-zd8">
+                                                <rect key="frame" x="0.0" y="205" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHp-18-6iA" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x1C-EV-lyu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-Er-CYf" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWL-2K-PZk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CI3-rA-9IA" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5f-Ts-aZa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACQ-jf-GkT" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y81-3B-dd8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zAz-Wm-nHN">
+                                                <rect key="frame" x="0.0" y="246" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bia-ET-WPJ" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IQp-hL-eMq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgR-SX-kdK" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q7I-Jw-HPy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfy-Iw-e2w" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WnR-fj-stS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDm-7P-zhy" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIe-dY-PlT"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="djd-Ot-cuc">
+                                                <rect key="frame" x="0.0" y="287" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vD8-kZ-wLX" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OMJ-M2-Pt7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObP-Hb-nDT" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxZ-F1-mCa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="928-5c-omY" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gus-XM-ORH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6m-0m-FDW" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VmF-Wy-qJK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OQN-Vc-qxB">
+                                                <rect key="frame" x="0.0" y="328" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFQ-6q-FdQ" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76o-uR-1pS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2F-aJ-taV" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MER-ww-uPy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbN-Hu-TFb" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d2f-no-B8R"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeG-GN-dVe" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZE2-1Z-q5q"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4mu-VH-7NU">
+                                                <rect key="frame" x="0.0" y="369" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmS-Sh-yMA" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LP7-dM-fi0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ6-IJ-BAT" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7d-JO-mLW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vM-85-4ge" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vui-8c-iYP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68n-YT-str" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DX6-jN-z65"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8NX-x3-6ja">
+                                                <rect key="frame" x="0.0" y="410" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRj-NL-jl8" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TPJ-z6-NbC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYT-Kc-fJh" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jRl-T5-kAj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-Xb-V4u" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xjh-Fn-z6X"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjy-6A-qte" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J8R-WL-LwV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4uy-br-2C7">
+                                                <rect key="frame" x="0.0" y="451" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wV-Dm-u8i" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wen-vi-DWF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmT-eT-ivE" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J3X-1F-mDR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbA-20-xG8" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yrd-dy-hQN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEz-14-XEn" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6yv-wo-GjX"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rwm-f0-RyZ">
+                                                <rect key="frame" x="0.0" y="492" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI5-vi-pjJ" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aM-h5-Zxm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3f-iq-gOf" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zmx-YW-nFU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fct-k4-U7z" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3E-4j-P2V"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWR-RI-K6n" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dng-iz-bXZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yAr-qe-9ci">
+                                                <rect key="frame" x="0.0" y="533" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZ2-YZ-DKO" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YAq-qU-nnQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unu-0L-Y30" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D0J-z6-i4w"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6N-Vr-v7j" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="omi-R5-fzp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfs-0Y-vF2" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KsM-Qi-OXK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Ca-07-YNw">
+                                                <rect key="frame" x="0.0" y="574" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlz-4O-MHz" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwM-PX-uCB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66Y-QR-FLd" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ya3-Mo-v1D"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXf-H9-7Nv" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1c1-Dl-3q9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AE0-pP-J88" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOj-fh-l16"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EjV-UP-Azi">
+                                                <rect key="frame" x="0.0" y="615" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZr-Az-WN0" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEf-4j-XZb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZg-no-0BP" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Od-0M-IvL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jte-Fd-Kug" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhj-hT-vLp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWa-y8-OUt" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LKy-I7-Yxe"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="R8c-RK-umM">
+                                                <rect key="frame" x="0.0" y="656" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehg-JC-en5" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8me-jc-Hnx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9W-Ur-AuK" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jm-gH-fNs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVb-KU-zsC" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEU-8S-g0m"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1F-hY-W5q" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pcB-a3-S4A"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Bza-oa-wbU">
+                                                <rect key="frame" x="0.0" y="697" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oql-4Q-rgN" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ea-Hi-53a"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjU-ED-849" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zv2-wF-ZX6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFh-Ph-Gcx" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mps-VN-paY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dc-Ei-Ksy" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="izn-5U-zYY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f41-lE-M1l">
+                                                <rect key="frame" x="0.0" y="738" width="475" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6b-gE-shT" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dqz-uZ-Qo9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMT-af-vxi" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BnK-tq-elV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4g-D2-ApV" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="241.5" y="0.0" width="113" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJX-oK-6DU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPI-qN-vMj" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="362.5" y="0.0" width="112.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x93-aD-iVZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4Y-Ch-Pn9">
-                                        <rect key="frame" x="325" y="20" width="118" height="30"/>
+                                        <rect key="frame" x="256" y="20" width="118" height="30"/>
                                         <state key="normal" title="Hide Background"/>
                                         <connections>
                                             <action selector="hideBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6o-rZ-YJU"/>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XCi-B9-SPL">
+                                        <rect key="frame" x="195" y="849" width="235" height="68"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xzQ-9b-Eyl">
+                                                <rect key="frame" x="0.0" y="0.0" width="235" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdW-SN-dZ2" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cp9-l8-Jyl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHp-Ok-Uya" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121.5" y="0.0" width="113.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UOa-0o-1dw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ai2-Jl-A2a">
+                                                <rect key="frame" x="0.0" y="38" width="235" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSt-Rs-6Hq" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4aO-Iq-1jf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q86-wP-6Wa" customClass="CustomButton" customModule="Helicopter_Panel" customModuleProvider="target">
+                                                        <rect key="frame" x="121.5" y="0.0" width="113.5" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="showProcedure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LRg-zR-Eje"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="hk6-W2-MH5" secondAttribute="trailing" constant="146" id="Kh9-WZ-Dka"/>
-                                    <constraint firstItem="hk6-W2-MH5" firstAttribute="leading" secondItem="Brg-lS-e8W" secondAttribute="leading" constant="138" id="NQS-Oy-Im6"/>
+                                    <constraint firstItem="d4c-MO-nsV" firstAttribute="top" secondItem="Brg-lS-e8W" secondAttribute="top" id="A4p-EH-R2J"/>
+                                    <constraint firstItem="XCi-B9-SPL" firstAttribute="top" secondItem="r2Q-B2-wuB" secondAttribute="bottom" constant="11" id="GhP-p8-xHX"/>
+                                    <constraint firstAttribute="height" constant="995" id="XgY-q3-Khp"/>
+                                    <constraint firstItem="r2Q-B2-wuB" firstAttribute="leading" secondItem="Brg-lS-e8W" secondAttribute="leading" constant="75" id="Zly-Vv-xby"/>
+                                    <constraint firstAttribute="bottom" secondItem="d4c-MO-nsV" secondAttribute="bottom" id="bzH-mE-qbU"/>
+                                    <constraint firstAttribute="trailing" secondItem="XCi-B9-SPL" secondAttribute="trailing" constant="200" id="eCO-yt-qUb"/>
                                     <constraint firstItem="G4Y-Ch-Pn9" firstAttribute="top" secondItem="Brg-lS-e8W" secondAttribute="top" constant="20" symbolic="YES" id="f3Y-a5-Ned"/>
+                                    <constraint firstAttribute="trailing" secondItem="d4c-MO-nsV" secondAttribute="trailing" id="h75-nn-pwU"/>
+                                    <constraint firstAttribute="trailing" secondItem="r2Q-B2-wuB" secondAttribute="trailing" constant="80" id="iG2-JO-U2O"/>
+                                    <constraint firstItem="XCi-B9-SPL" firstAttribute="leading" secondItem="Brg-lS-e8W" secondAttribute="leading" constant="195" id="kaJ-RY-4tG"/>
+                                    <constraint firstItem="d4c-MO-nsV" firstAttribute="leading" secondItem="Brg-lS-e8W" secondAttribute="leading" id="sHR-7l-3Ec"/>
                                     <constraint firstItem="G4Y-Ch-Pn9" firstAttribute="centerX" secondItem="Brg-lS-e8W" secondAttribute="centerX" id="w1Q-6a-IEz"/>
-                                    <constraint firstItem="hk6-W2-MH5" firstAttribute="top" secondItem="Brg-lS-e8W" secondAttribute="top" constant="72" id="wbC-Te-3qk"/>
+                                    <constraint firstItem="r2Q-B2-wuB" firstAttribute="top" secondItem="G4Y-Ch-Pn9" secondAttribute="bottom" constant="20" id="xet-XM-N7x"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Brg-lS-e8W" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="36r-aM-6A6"/>
-                            <constraint firstItem="d4c-MO-nsV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7XQ-no-md8"/>
-                            <constraint firstItem="d4c-MO-nsV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X3x-ok-euM"/>
-                            <constraint firstItem="d4c-MO-nsV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cV2-99-mQE"/>
                             <constraint firstItem="Brg-lS-e8W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="egK-0h-oge"/>
-                            <constraint firstItem="d4c-MO-nsV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zPu-2M-bZ9"/>
-                            <constraint firstItem="Brg-lS-e8W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zUL-ae-siU"/>
-                            <constraint firstItem="Brg-lS-e8W" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zWC-J8-6bJ"/>
+                            <constraint firstItem="Brg-lS-e8W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ySF-SD-Bsg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="bgImageView" destination="d4c-MO-nsV" id="7aV-Yg-RoX"/>
                         <outletCollection property="buttons" destination="iab-pb-dX4" collectionClass="NSMutableArray" id="UVd-dG-cs6"/>
-                        <outletCollection property="buttons" destination="ejF-S8-STx" collectionClass="NSMutableArray" id="U5E-Mb-5m7"/>
-                        <outletCollection property="buttons" destination="hMF-XZ-80L" collectionClass="NSMutableArray" id="oqC-jI-6fq"/>
                         <outletCollection property="buttons" destination="tih-2J-cfE" collectionClass="NSMutableArray" id="Ue2-WM-FXI"/>
+                        <outletCollection property="buttons" destination="hMF-XZ-80L" collectionClass="NSMutableArray" id="oqC-jI-6fq"/>
+                        <outletCollection property="buttons" destination="ejF-S8-STx" collectionClass="NSMutableArray" id="U5E-Mb-5m7"/>
+                        <outletCollection property="buttons" destination="14j-Wd-jTI" collectionClass="NSMutableArray" id="WhL-ea-MmB"/>
+                        <outletCollection property="buttons" destination="aj8-Ep-MqP" collectionClass="NSMutableArray" id="o8Z-YI-3Do"/>
+                        <outletCollection property="buttons" destination="eoq-UL-tzq" collectionClass="NSMutableArray" id="c6U-sk-LuQ"/>
+                        <outletCollection property="buttons" destination="Ii1-nE-4sl" collectionClass="NSMutableArray" id="Sca-19-g6u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170" y="141"/>
+            <point key="canvasLocation" x="-170.3125" y="140.625"/>
         </scene>
         <!--Popover View Controller-->
         <scene sceneID="aS4-AV-0fL">
@@ -107,15 +757,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d4T-Sf-5Fp">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <color key="backgroundColor" white="0.84999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="d4T-Sf-5Fp" firstAttribute="top" secondItem="sjk-cl-g8m" secondAttribute="top" id="HRl-Ag-ehB"/>
                             <constraint firstItem="d4T-Sf-5Fp" firstAttribute="bottom" secondItem="sjk-cl-g8m" secondAttribute="bottom" id="Hp3-RS-JsL"/>

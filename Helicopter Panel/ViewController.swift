@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
-    @IBOutlet var buttons: [UIButton]!
+    @IBOutlet var buttons: [CustomButton]!
     @IBOutlet weak var bgImageView: UIImageView!
-
+    
     var panelButtons = [PanelButton]()
 
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             button.tag = panelButtons[index].id
         }
     }
-
+    
     func loadJSON() {
         if let path = Bundle.main.url(forResource: "panel", withExtension: "json") {
             do {
@@ -70,8 +70,6 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         let popOverVC = popVC.popoverPresentationController
         popOverVC?.delegate = self
         popOverVC?.sourceView = sender
-        popOverVC?.sourceRect = CGRect(x: sender.bounds.midX, y: sender.bounds.minY, width: 0, height: 0)
-        popVC.preferredContentSize = CGSize(width: 250, height: 250)
 
         self.present(popVC, animated: true)
 
